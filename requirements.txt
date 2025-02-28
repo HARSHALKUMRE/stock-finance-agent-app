@@ -16,3 +16,4 @@ phidata
 google-generativeai
 duckduckgo-search
 googlesearch-python
+pycountry
