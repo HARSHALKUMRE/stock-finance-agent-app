@@ -45,6 +45,8 @@ COMMON_STOCKS = {
 }
 
 
+os.environ["GOOGLE_API_KEY"] == st.secrets["GOOGLE_API_KEY"]
+
 # Page Configuration
 st.set_page_config(
     page_title="Advanced Stock Market Analysis",
