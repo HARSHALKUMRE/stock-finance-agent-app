@@ -122,7 +122,7 @@ def initialize_agents():
             st.session_state.web_agent = Agent(
                 name="Web Search Agent",
                 role="Search the web for the information",
-                model=Groq(api_key=GROQ_API_KEY),
+                model=Groq(api_key=GROQ_API_KEY, id="llama-3.3-70b-versatile"),
                 tools=[
                     GoogleSearch(fixed_language='english', fixed_max_results=5),
                     DuckDuckGo(fixed_max_results=5)
@@ -135,7 +135,7 @@ def initialize_agents():
             st.session_state.finance_agent = Agent(
                 name="Financial AI Agent",
                 role="Providing financial insights",
-                model=Groq(api_key=GROQ_API_KEY),
+                model=Groq(api_key=GROQ_API_KEY, id="llama-3.3-70b-versatile"),
                 tools=[
                     YFinanceTools(
                         stock_price=True,
