@@ -14,7 +14,7 @@ import os
 
 load_dotenv()
 GROQ_API_KEY = os.getenv('GROQ_API_KEY')
-os.environ['GROQ_API_KEY'] = st.secrets["GOOGLE_API_KEY"]
+os.environ['GROQ_API_KEY'] = st.secrets["GROQ_API_KEY"]
 
 
 # Enhanced stock symbol mappings
